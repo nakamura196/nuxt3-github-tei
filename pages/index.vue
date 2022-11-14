@@ -14,7 +14,12 @@ const examples = [
     "user": "nakamura196",
     "repo": "lw-private",
     "path": "test.xml"
-  }
+  },
+  {
+    "user": "kouigenjimonogatari",
+    "repo": "kouigenjimonogatari.github.io",
+    "path": "tei/01.xml"
+  },
 ]
 
 const setExample = (index) => {
@@ -68,7 +73,9 @@ const move = () => {
       
       <button class="btn mr-4" @click="setExample(0)">Publicデータの例</button>
       
-      <button class="btn" @click="setExample(1)">Privateデータの例</button>
+      <button class="btn mr-4" @click="setExample(1)">Privateデータの例</button>
+
+      <button class="btn mr-4" @click="setExample(2)">校異源氏物語の例</button>
     </div>
   </div>
 </template>
